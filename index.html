@@ -10,6 +10,8 @@
     <script type="text/javascript" src="client.js"></script>
     <link href="global.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <link rel="stylesheet" media="mediatype and|not|only (expressions)" href="print.css">
+
 </head>
 
 <body class="page">
@@ -24,7 +26,7 @@
                 </ul>
             </nav>
         </header>
-        <section class="content">
+        <section class="content-section">
             <article class="panel">
                 <h2>Left Pane Title</h2>
                 <p>Praesent felis metus, pharetra id egestas maximus, pretium non purus. Donec et mauris ut tellus porta ultricies. Vestibulum eros elit, tempor non pellentesque et, varius eu ante. Vivamus suscipit dolor sapien, eu consequat magna posuere vel. Duis eu velit sit amet eros feugiat varius id nec purus.
@@ -43,14 +45,14 @@
         {{#each releases}}
             <div class="entry">
                 <div class="thumb">
-                    <img src="logo.png" alt="q4 logo">
+                    <img src="{{thumb}}">
                 </div>
                 <div class="content"><h2>{{headline}}</h2>
                     <div class="date">
                         {{formatDate date "MMMM DD, YYYY"}}
                     </div>
                     <div class="body">
-                        <p>{{body}}</p>
+                        <p>{{truncate body 120}}</p>
                     </div>
                 </div>
             </div>
