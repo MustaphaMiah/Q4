@@ -146,7 +146,7 @@ p {
 .footer {
 	font-style: italic;
 	font-size: smaller;
-	padding: 10px 0 20px 0;
+	padding: 5px 0 20px 0;
 } 
 
 /* RESPONSIVE
@@ -158,7 +158,41 @@ p {
 /* Using the following image as your guide, make this page responsive. This responsive styling should begin when the window is 768 pixels or lower. */
 
 @media screen and (max-width: 768px) {
-	.nav {width: 104px;}
-	/* #main {margin-left: 216px;} */
-  }
+.nav {
+	width: 96%;
+	margin: 20px auto;
+}
+.nav_item {
+	width: 49%;
+}
+
+.content-section {
+	flex-direction: column;
+}
+
+.panel {
+	width: 96%;
+	margin: 10px auto;
+}
+
+.news {
+	flex-direction: column;
+}
+
+.entry {
+	margin: 10px 2%;
+}
+
+.entry:last-child {
+	margin: 10px 2%;
+}
+
+.footer {
+	font-style: italic;
+	font-size: smaller;
+	padding: 10px 2% 20px;
+}
+
+}
+
 
